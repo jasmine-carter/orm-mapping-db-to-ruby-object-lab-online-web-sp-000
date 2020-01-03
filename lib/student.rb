@@ -22,7 +22,7 @@ class Student
     # return a new instance of the Student class
     sql = <<-SQL
       SELECT *
-      FROM songs
+      FROM student
       WHERE name = ?
       LIMIT 1
     SQL
