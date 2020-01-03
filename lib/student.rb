@@ -77,7 +77,7 @@ class Student
     ORDERY by id ASC
     LIMIT 1
     SQL
-    DB[:conn].exectute(sql).map do |row|
+    DB[:conn].execute(sql).map do |row|
       self.new_from_db(row)
     end
   end
